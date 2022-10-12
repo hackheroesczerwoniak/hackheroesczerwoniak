@@ -16,7 +16,7 @@ export default function RegistrationPage() {
         catch (err) {
             setErr(err.code)
         }
-    }, []);
+    }, [signUp]);
 
     if (currentUser) {
         return <div className="text-white">Welcome {currentUser.email}</div>
