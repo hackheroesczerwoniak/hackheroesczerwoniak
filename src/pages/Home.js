@@ -37,10 +37,8 @@ export default function Home() {
     }
 
     if (currentUser) {
-        return <div className={'bg-[#1e1e1e] h-full w-full flex items-center flex-col box-border pt-[100px]'}>
-            <img src={'https://media.tenor.com/cIUjlvgnFRgAAAAM/dog-snoop.gif'} width={200} alt={'dog'}/>
-            <div className={'text-3xl text-white font-bold font-sans mt-[20px]'}>Cześć</div>
-            <div className={'text-1xl text-white font-bold font-sans mt-[20px]'}>{currentUser.email}</div>
+        return <div className={'bg-[#1e1e1e]/95 h-full w-full flex items-center flex-col box-border overflow-auto mt-[80px] p-[20px]'}
+                    style={{height: "calc(100vh - 80px)"}}>
             {/*Form to add new idea, title and submit button: */}
             <form className={'flex flex-col mt-[20px] gap-[10px] items-end'} onSubmit={onSubmit}>
                 <input className={'w-[300px] h-[40px] bg-black/30 p-3 text-white outline-none'}

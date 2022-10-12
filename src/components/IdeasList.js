@@ -21,9 +21,11 @@ export const IdeasList = () => {
         }
     }, []);
 
-    return <div className={'h-full'}>
-        <h1 className={'text-2xl text-white font-medium font-sans mt-[20px]'}>Pomysły na usprawnienie miasta</h1>
-        <div className={'flex flex-col gap-[20px] max-h-[400px] overflow-auto'}>
+    return <div className={'p-[20px] md:p-[40px] flex flex-col gap-[20px] md:gap-[40px]'}>
+        <h1 className={'text-2xl text-white font-medium font-sans mt-[20px] text-center'}>
+            Pomysły na usprawnienie miasta
+        </h1>
+        <div className={'flex flex-col gap-[20px] w-full sm:w-[600px] mt-[20px]'}>
             {
                 Object.keys(ideas).map((key) => {
                     return <CityIdea key={key} idea={ideas[key]} id={key}/>

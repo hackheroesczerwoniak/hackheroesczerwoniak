@@ -54,11 +54,11 @@ export default function Navbar() {
 
     const currentUserEmail = useMemo(() => {
         if (currentUser) {
-            return <div className="text-white">{currentUser.email}</div>
+            return <div className="text-white hidden md:block">{currentUser.email}</div>
         }
     }, [currentUser]);
 
-    return <nav className="absolute top-0 left-0 flex flex-col  justify-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 bg-[#1e1e1e]/40 w-full">
+    return <nav className="fixed top-0 left-0 flex sm:flex-row sm:text-left justify-around py-4 px-6 bg-neutral-800  w-full">
         <Link to={currentUser ? "/home" : "/"} className="text-2xl font-bold text-white no-underline hover:no-underline leading-loose">
             <div>HackHeroes</div>
         </Link>
