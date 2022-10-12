@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar.js";
 import { UserContextProvider } from "./context/userContext.js";
 import Home from "./pages/Home"
 import RegistrationPage from "./pages/RegistrationPage.js"
+import LoginPage from "./pages/LoginPage.js"
 import MainPage from "./pages/MainPage.js"
 import "./index.css"
 
@@ -15,6 +16,7 @@ export const App = () => {
                     <Route path="/" element={<MainPage/>}/>
                     <Route path="/home" element={<Home/>}/>
                     <Route path="/rejestracja" element={<RegistrationPage/>}/>
+                    <Route path="/logowanie" element={<LoginPage/>}/>
                 </Routes>
             </BrowserRouter>
         </UserContextProvider>

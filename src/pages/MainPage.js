@@ -1,13 +1,11 @@
-import React, { useCallback, useContext, useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { useNavigate } from "react-router-dom";
-import { LoginForm } from "../components/LoginForm.js";
+import { IdeasList } from "../components/IdeasList.js";
 import { UserContext } from "../context/userContext"
 
 export default function MainPage() {
 
-    const {signIn, currentUser} = useContext(UserContext);
-
-    const [signInError, setSignInError] = React.useState("");
+    const {currentUser} = useContext(UserContext);
 
     const navigate = useNavigate();
 
@@ -17,17 +15,7 @@ export default function MainPage() {
         }
     }, [currentUser, navigate]);
 
-    const onSignIn = useCallback(async (email, password) => {
-        try {
-            await signIn(email, password)
-            navigate("/")
-        }
-        catch (err) {
-            setSignInError(err.code)
-        }
-    }, []);
-
     return <div className="w-full h-full flex justify-center items-center">
-        <LoginForm onSubmit={onSignIn} error={signInError} />
+        <IdeasList />
     </div>
 }
