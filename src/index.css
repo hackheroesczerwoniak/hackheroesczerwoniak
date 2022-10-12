@@ -8,15 +8,10 @@ html {
 }
 
 body {
-    background: url("https://www.zyrardow.pl/wp-content/uploads/sierpien-1920x820-c-default.jpg");
-    background-size: cover;
-    background-repeat: repeat;
-    background-position: center;
-    backdrop-filter: blur(10px);
+    background: #1e1e1e;
     height: 100%;
     width: 100%;
 }
-
 
 #root {
     height: 100%;
