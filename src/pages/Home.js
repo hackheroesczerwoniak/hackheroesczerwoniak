@@ -60,13 +60,13 @@ export default function Home() {
             {/*Form to add new idea, title and submit button: */}
             <h1 className={'text-3xl text-white font-bold font-sans mt-[20px] mt-[100px]'}>Pomysły na usprawnienie miasta</h1>
             <form className={'flex flex-col mt-[20px] gap-[10px] items-end'} onSubmit={onSubmit}>
-                <input className={'w-[300px] h-[40px] bg-black/30 p-3 text-white bg-transparent outline-none'}
+                <input className={'w-[300px] h-[40px] bg-black/30 p-3 text-white outline-none'}
                        onChange={onIdeaNameChange}
                        type={'text'}
                        minLength={10}
                        required={true}
                        placeholder={'Pomysł'}/>
-                <textarea className={'w-[300px] h-[100px] bg-black/30 p-3 text-white bg-transparent outline-none'}
+                <textarea className={'w-[300px] h-[100px] bg-black/30 p-3 text-white outline-none'}
                             onChange={onIdeaDescriptionChange}
                             minLength={10}
                             required={true}
