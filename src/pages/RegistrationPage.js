@@ -22,7 +22,7 @@ export default function RegistrationPage() {
         return <div className="text-white">Welcome {currentUser.email}</div>
     }
     else {
-        return <div className="w-full h-full flex justify-center items-center">
+        return <div className="w-full h-full flex justify-center items-center bg-green-500/10 bg-green-500/10 p-[10px]">
             <RegistrationForm onSubmit={onRegister} error={err} />
         </div>
     }

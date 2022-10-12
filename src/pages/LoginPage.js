@@ -1,6 +1,5 @@
 import React, { useCallback, useContext, useEffect } from 'react'
 import { useNavigate } from "react-router-dom";
-import { IdeasList } from "../components/IdeasList.js";
 import { LoginForm } from "../components/LoginForm.js";
 import { UserContext } from "../context/userContext"
 
@@ -27,7 +26,7 @@ export default function LoginPage() {
         }
     }, []);
 
-    return <div className="w-full h-full flex justify-center items-center">
+    return <div className="w-full h-full flex justify-center items-center bg-green-500/10 bg-green-500/10 p-[10px]">
         <LoginForm onSubmit={onSignIn} error={signInError} />
     </div>
 }

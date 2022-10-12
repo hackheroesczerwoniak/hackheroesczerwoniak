@@ -24,7 +24,7 @@ export const LoginForm = (props) => {
             <div>Logowanie</div>
         </div>
         <div className="mb-4">
-            <input className="shadow bg-[#2a2a2a] mt-2 border-none w-full py-4 px-4 text-white focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent"
+            <input className="shadow bg-[#3a3a3a] mt-2 border-none w-full py-4 px-4 text-white focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent"
                    id="email" type="email" placeholder="Adres e-mail"
                    autoComplete={"email"}
                    required={true}
@@ -33,7 +33,7 @@ export const LoginForm = (props) => {
         </div>
         <div className="mb-6">
             <input
-                className="shadow bg-[#2a2a2a] mt-2 border-none w-full py-4 px-4 text-white focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent"
+                className="shadow bg-[#3a3a3a] mt-2 border-none w-full py-4 px-4 text-white focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent"
                 id="current-password" type="password"
                 autoComplete="current-password"
                 placeholder="Hasło"

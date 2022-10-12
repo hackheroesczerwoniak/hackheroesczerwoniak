@@ -27,7 +27,7 @@ export const RegistrationForm = (props) => {
 
         <div className="mb-4">
             <input
-                className="shadow bg-[#2a2a2a] mt-2 border-none w-full py-4 px-4 text-white focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent"
+                className="shadow bg-[#3a3a3a] mt-2 border-none w-full py-4 px-4 text-white focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent"
                 id="email"
                 type="email"
                 autoComplete={"email"}
@@ -40,7 +40,7 @@ export const RegistrationForm = (props) => {
 
         <div className="mb-6">
             <input
-                className="shadow bg-[#2a2a2a] mt-2 border-none w-full py-4 px-4 text-white focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent"
+                className="shadow bg-[#3a3a3a] mt-2 border-none w-full py-4 px-4 text-white focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent"
                 id="password"
                 autoComplete="new-password"
                 type="password"
@@ -51,7 +51,7 @@ export const RegistrationForm = (props) => {
             {props.error === "auth/weak-password" && <div className="mt-3 text-red-500">Hasło jest zbyt słabe</div>}
         </div>
         <div className="flex items-center justify-between">
-            <Link className="text-white underline" to="/">Powrót do logowania</Link>
+            <Link className="text-white underline" to="/logowanie">Powrót do logowania</Link>
             <button
                 className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
                 type="submit">
