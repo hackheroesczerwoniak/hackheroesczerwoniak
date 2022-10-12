@@ -21,10 +21,9 @@ export const IdeasList = () => {
         }
     }, []);
 
-    return <div className={''}>
-        <h1 className={'text-2xl text-white font-medium font-sans mt-[20px] mt-[100px]'}>Pomysły na usprawnienie
-            miasta</h1>
-        <div className={'flex flex-col gap-[20px] mt-[20px]'}>
+    return <div className={'h-full'}>
+        <h1 className={'text-2xl text-white font-medium font-sans mt-[20px]'}>Pomysły na usprawnienie miasta</h1>
+        <div className={'flex flex-col gap-[20px] max-h-[400px] overflow-auto'}>
             {
                 Object.keys(ideas).map((key) => {
                     return <CityIdea key={key} idea={ideas[key]} id={key}/>
